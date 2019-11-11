@@ -1,0 +1,385 @@
+body {
+    margin: 0;
+    padding: 0;    
+    font-family: 'Poppins';
+}
+
+.contenedor {
+    width: 90%;
+    margin: auto;
+    max-width: 1280px;
+}
+
+header {
+    background-image: url(imagenes/home.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    height: 750px;
+    background-size: cover;
+}
+
+.menu {
+    background: #fff;
+    padding: 0px 0px;
+    width: 100%;
+    top: 0;
+    box-shadow: 1px 1px 8px #ccc;
+    z-index: 1;
+}
+
+.submenu {
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+    background: #080808;
+    color: #fff;
+    width: 100%;
+}
+
+.menu .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+header .logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #000;
+    letter-spacing: 3px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+#inicio {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#inicio .izquierda {
+    width: 50%;
+    margin-top: 70px;
+    margin-left: 57px;
+}
+
+#inicio h1 {
+    font-size: 38px;
+    text-align: center;
+    color: #3E0202;
+    width: 60%;
+}
+
+#inicio p {
+    width: 60%;
+    line-height: 35px;
+    font-size: 20px;
+    text-align: center;
+    color: darkred;
+    font-weight: 600;
+    margin: 0;
+}
+
+#historia {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 120px;
+}
+
+#historia .titulos {
+    margin-top: 40px;
+}
+
+#historia h2, #productos h2, #contacto h2 {
+    font-size: 28px;
+    color: #3E0202;
+}
+
+#historia h3, #productos h3 {
+    text-align: left;
+    font-size: 24px;
+    font-weight: 300;
+    font-style: italic;
+    color: darkred;
+}
+
+
+#historia .contenido {
+    display: flex;
+    justify-content: space-between;
+}
+
+#historia .contenido .izquierda {
+    width: 70%;
+}
+
+#historia .contenido .izquierda p {
+    font-size: 16px;
+    color: #5E5555;
+    margin-bottom: 5px;
+}
+
+#historia img {
+    height: 300px;
+    width: 300px;
+    margin: 21px 40px;
+}
+
+#productos {
+    margin-top: 120px;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#productos img {
+    height: 200px;
+    width: 200px;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.producto h3 {
+    text-align: center !important;
+    width: 66%;
+}
+
+.producto p {
+    text-align: center;
+    width: 70%;
+}
+
+
+#contacto {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    background: #F7EFEF;
+    box-shadow: 2px 4px 27px #910202;
+}
+
+#contacto .contenedor-contacto {
+    display: flex;
+    justify-content: space-between;
+}
+#contacto .datos{
+    border-right: 2px solid darkred;
+    width: 45%
+}
+
+#contacto .mapa {
+    margin-left: 20px;
+    border-right: 1px solid darkred;
+    border-bottom: 1px solid darkred; 
+}
+
+#contacto ul li {
+    list-style-type: none;
+    margin: 40px 5px;
+}
+
+#contacto ul li:first-child {
+    font-size: 20px;
+    margin-left: -40px;
+    margin-bottom: 60px;
+    border-bottom: 1px solid darkred;
+    width: 70%;
+}
+
+#contacto ul li i {
+    margin-right: 25px;
+}
+
+footer {
+    background: #080808;
+    color: #fff;
+}
+
+.contenedor-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dietetica {
+    display: flex;
+}
+
+footer i {
+    margin-left: 3px;
+    margin-right: 9px;
+    font-size: 10px;
+    margin-top: 20px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+
+@media screen and (max-width: 480px) {
+
+header {
+    height: 580px;
+}
+
+#inicio .izquierda {
+    margin-top: 30px;
+}
+
+nav {
+    position: absolute;
+    top: 177px;
+    left: 0;
+    background: #232220;
+    width: 100%;
+    display: none;
+}
+
+.submenu {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    right: 50px;
+}
+
+
+nav ul li {
+    display: block;
+    margin: 23px 0px;
+}
+
+ nav ul li a {
+    color: #fff;
+  }
+
+#inicio h1 {
+    font-size: 20px;
+}
+
+#inicio p {
+    width: 100%;
+    line-height: 25px;
+    font-size: 15px;
+    text-align: center;
+    color: darkred;
+    font-weight: 600;
+    margin-left: -41px;
+}
+
+#historia {
+    margin-top: 30px;
+}
+
+#historia .titulos {
+    margin-top: 0px;
+}
+
+#historia h2, #productos h2, #contacto h2 {
+    font-size: 20px;
+}
+
+#historia h3, #productos h3 {
+    text-align: justify;
+    font-size: 16px;
+}
+
+#historia .contenido {
+    display: block;
+}
+
+#historia .contenido .izquierda {
+    width: 100%;
+    text-align: justify;
+}
+
+#historia img {
+    height: 300px;
+    width: 300px;
+    margin: 20px 15px;
+}
+
+
+#productos {
+    margin-top: -100px;
+}
+
+.producto {
+    width: 48%;
+    margin: 0 3px;
+}
+
+#productos img {
+    height: 120px;
+    width: 120px;
+}
+
+.producto p {
+    text-align: initial;
+    width: 100%;
+    font-size: 11px;
+}
+
+#contacto {
+    margin-top: 30px;
+}
+
+#contacto .contenedor-contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+#contacto .datos {
+    border-right: none;
+    width: 100%;
+}
+
+#contacto ul li:first-child {
+    font-size: 17px;
+    margin-left: -27px;
+    margin-top: 2px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#contacto ul li {
+    margin: 30px 0px;
+}
+
+#contacto iframe {
+    width: 100%;
+    border: 0;
+    height: 300px;
+}
+
+.contenedor-footer {
+    flex-wrap: wrap;
+}
+
+footer .propio {
+    margin-left: 60px;
+    font-size: 13px;
+    margin-top: -17px;
+}
+
+
+
+}
